@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# -*- bash -*-
+#
+PORT="$PORT"
+set -u -e -o pipefail
+if [[ -z "$PORT" ]]
+then
+  PORT="5555"
+fi
+NODE_ENV=production PORT=$PORT node app.js
+
+#!/usr/bin/env node
+# -*- js   -*-
+#
+
+
